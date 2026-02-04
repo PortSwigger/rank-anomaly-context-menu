@@ -1,0 +1,13 @@
+Uuid: beda434e9de54dc6b28fb4bfcb69839e
+ExtensionType: 1
+Name: Rank Anomaly Context Menu
+RepoName: rank-anomaly-context-menu
+ScreenVersion: 0.0.1
+SerialVersion: 1
+MinPlatformVersion: 28
+ProOnly: True
+Author: Nick Coblentz
+ShortDescription: This extension allows users to select multiple requests, calculate their anomaly rank, and display the result in the request's notes section.
+EntryPoint: ApplyAnomalyRank-0.1.0.jar
+BuildCommand: ./gradlew build
+SupportedProducts: Pro

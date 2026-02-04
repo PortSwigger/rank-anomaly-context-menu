@@ -1,0 +1,16 @@
+<p>The Anomaly Rank Right Click Context Menu is a Burp Suite extension that enhances request analysis by providing an option to apply an anomaly rank to selected requests. Once selected, it calculates the anomaly rank for each request and displays the results in the notes section of the request. This extension allows for easier tracking and analysis of anomalous requests within the Burp Suite environment.</p>
+
+<h2>Features</h2>
+<p>This extension focuses on one primary function:</p>
+<ul>
+    <li>Apply Anomaly rank to selected requests: With this feature, you can select multiple requests, right-click, and select the Apply Anomaly Rank option. The extension will calculate the anomaly rank for each request and display the results in the notes section of each request.</li>
+</ul>
+
+<h2>Usage</h2>
+<p>Using the Anomaly Rank Right Click Context Menu extension is straightforward:</p>
+<ol>
+    <li>Compile the extension using <code class=InlineCode>gradlew shadowJar</code>.</li>
+    <li>Load the extension to Burp Suite from the resulting jar file located in the generated directory: <code class=InlineCode>build/libs/ApplyAnomalyRank-x.y.z-all.jar</code>, where <code class=InlineCode>x.y.z</code> indicates the build version.</li>
+    <li>In the Burp Suite, select multiple requests you wish to analyze.</li>
+    <li>Right-click on the selection and choose the Apply Anomaly Rank option. The extension will then calculate the anomaly rank and detail it in the notes section of each request.</li>
+</ol>
