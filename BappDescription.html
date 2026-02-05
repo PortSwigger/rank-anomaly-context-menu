@@ -1,16 +1,22 @@
-<p>The Anomaly Rank Right Click Context Menu is a Burp Suite extension that enhances request analysis by providing an option to apply an anomaly rank to selected requests. Once selected, it calculates the anomaly rank for each request and displays the results in the notes section of the request. This extension allows for easier tracking and analysis of anomalous requests within the Burp Suite environment.</p>
+<p>
+    This extension adds a context menu option to calculate and apply anomaly ranks to selected HTTP requests. The
+    anomaly rank is calculated using Burp Suite's built-in ranking utilities and displayed in the notes field of each
+    request, making it easy to identify and prioritize potentially anomalous traffic during security testing.
+</p>
 
 <h2>Features</h2>
-<p>This extension focuses on one primary function:</p>
 <ul>
-    <li>Apply Anomaly rank to selected requests: With this feature, you can select multiple requests, right-click, and select the Apply Anomaly Rank option. The extension will calculate the anomaly rank for each request and display the results in the notes section of each request.</li>
+    <li>Bulk anomaly ranking: Select multiple requests and apply anomaly ranks to all of them at once</li>
+    <li>Automatic rank calculation: Uses built-in ranking utilities to calculate anomaly scores based on response
+        characteristics</li>
+    <li>Persistent annotations: Anomaly ranks are saved in request notes with timestamps for tracking analysis over time
+    </li>
 </ul>
 
 <h2>Usage</h2>
-<p>Using the Anomaly Rank Right Click Context Menu extension is straightforward:</p>
 <ol>
-    <li>Compile the extension using <code class=InlineCode>gradlew shadowJar</code>.</li>
-    <li>Load the extension to Burp Suite from the resulting jar file located in the generated directory: <code class=InlineCode>build/libs/ApplyAnomalyRank-x.y.z-all.jar</code>, where <code class=InlineCode>x.y.z</code> indicates the build version.</li>
-    <li>In the Burp Suite, select multiple requests you wish to analyze.</li>
-    <li>Right-click on the selection and choose the Apply Anomaly Rank option. The extension will then calculate the anomaly rank and detail it in the notes section of each request.</li>
+    <li>Select one or more HTTP requests in any Burp Suite tool (Proxy history, Site map, etc.)</li>
+    <li>Right-click on the selection and choose "Apply Anomaly Rank" from the context menu</li>
+    <li>View the calculated anomaly rank in the Notes field of each request, formatted as <code
+            class="InlineCode">Anom Rank [timestamp]: [rank]</code></li>
 </ol>

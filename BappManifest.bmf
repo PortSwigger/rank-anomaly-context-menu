@@ -7,7 +7,7 @@ SerialVersion: 1
 MinPlatformVersion: 28
 ProOnly: True
 Author: Nick Coblentz
-ShortDescription: This extension allows users to select multiple requests, calculate their anomaly rank, and display the result in the request's notes section.
+ShortDescription: Easily identify anomalous requests and responses by calculating their anomaly rank, and displaying the result in the request's notes section.
 EntryPoint: ApplyAnomalyRank-0.1.0.jar
 BuildCommand: ./gradlew build
 SupportedProducts: Pro
